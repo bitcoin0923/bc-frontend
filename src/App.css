@@ -1,0 +1,145 @@
+html{
+}
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dots-wrap {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr) );
+}
+.dots {
+    margin: 0 auto;
+    border: 1px solid #282c34;
+}
+
+.dot {
+    background-color: white;
+    position: relative;
+    padding: 3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 3px;
+    border: 1px solid #5c6571;
+}
+
+.dot-red {
+    background-color: #ed6300;
+}
+.dot-green {
+    background-color: #5ddb1c;
+}
+.dot-moon {
+    background-color: #f6c722;
+}
+
+.count-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.stats{
+    display: flex;
+    padding: 0 10px;
+}
+
+.stats h3{
+    margin: 0 10px;
+}
+
+.control {
+    display: flex;
+    margin: 0 10px;
+}
+
+.control button {
+    padding: 5px 10px;
+    background: #5c6571;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.control button:hover {
+    cursor: pointer;
+    background-color: white;
+    border-color: #17181b;
+    color: #5c6571;
+}
+
+.bust-wrapper {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr) );
+    background-color: #2d3035;
+}
+
+.bust {
+    border: 1px solid #17181b;
+}
+
+.bust-red {
+    color: #ed6300;
+}
+.bust-green {
+    color: #5ddb1c;
+}
+.bust-moon {
+    color: #f6c722;
+    border: 2px solid !important;
+}
+.bust-sky {
+    color: cyan;
+    border: 3px solid !important;
+}
+
+.quit {
+    font-size: 40px;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
